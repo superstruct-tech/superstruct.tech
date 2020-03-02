@@ -24,7 +24,7 @@
 		<section class="intro">
 			<header>
 				<h1>Superstruct</h1>
-				<p>The Solution to the Agency Problem</p>
+				<p>The Solution to the Overpriced Dev Talent Problem</p>
 
 				<ul class="actions">
 					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
@@ -50,6 +50,33 @@
 					<p>
 						<i>Live feed of a project outsourced to a dev shop</i>
 					</p>
+				</p>
+			</div>
+		</section>
+
+		<section>
+			<header>
+				<h2>Let's Talk</h2>
+			</header>
+			<div class="content">
+				<p><strong>Let's see if we can cut your costs in half.</strong> Book a call now, and we'll find out if building your own engineering team will save you money and pain.</p>
+				<ul class="actions">
+					<li><a href="https://harmonizely.com/david-guttman/superstruct-15" class="button primary large" id="schedule-call-1-button" target="_blank">Book a 15 minute Call with David</a></li>
+				</ul>
+
+				<p>
+					<iframe id="schedule-call-1" src="https://harmonizely.com/david-guttman/superstruct-15" style="width:100%; height:650px; display: none" frameborder="0" scrolling="yes"></iframe>
+
+					<script>
+						const btn = document.querySelector('#schedule-call-1-button')
+						const iframe = document.querySelector('#schedule-call-1')
+						btn.addEventListener('click', function (evt) {
+							if (window.innerWidth < 925) return
+							evt.preventDefault()
+							btn.style.display = 'none'
+							iframe.style.display = 'block'
+						})
+					</script>
 				</p>
 			</div>
 		</section>
@@ -97,23 +124,24 @@
 				<h2>Get in touch</h2>
 			</header>
 			<div class="content">
-				<p><strong>Sound too good to be true?</strong> We love to brag about client success stories, and we'd be happy to tell you all about them. Drop us a line, we can 4x your engineering output too.</p>
-				<form data-netlify="true">
-					<div class="fields">
-						<div class="field half">
-							<input type="text" name="name" id="name" placeholder="Your Name" />
-						</div>
-						<div class="field half">
-							<input type="email" name="email" id="email" placeholder="Your Email" />
-						</div>
-						<div class="field">
-							<textarea name="message" id="message" placeholder="What are you working on?" rows="3"></textarea>
-						</div>
-					</div>
-					<ul class="actions">
-						<li><input type="submit" value="Send Message" class="button primary" /></li>
-					</ul>
-				</form>
+				<p><strong>Sound too good to be true?</strong> I'd be happy to learn more about what you're building and tell you more. Book a call, and maybe we can 4x your engineering output too.</p>
+				<ul class="actions">
+					<li><a href="https://harmonizely.com/david-guttman/superstruct-15" class="button primary large" id="schedule-call-2-button" target="_blank">Book a 15 minute Call with David</a></li>
+				</ul>
+
+				<p>
+					<iframe id="schedule-call-2" src="https://harmonizely.com/david-guttman/superstruct-15" style="width:100%; height:650px; display: none" frameborder="0" scrolling="yes"></iframe>
+
+					<script>
+						const btn2 = document.querySelector('#schedule-call-2-button')
+						const iframe2 = document.querySelector('#schedule-call-2')
+						btn2.addEventListener('click', function (evt) {
+							if (window.innerWidth < 925) return
+							evt.preventDefault()
+							btn2.style.display = 'none'
+							iframe2.style.display = 'block'
+						})
+					</script>
 			</div>
 			<footer>
 				<ul class="items">
@@ -130,7 +158,7 @@
 		</section>
 
 		<!-- Copyright -->
-		<div class="copyright">&copy; Superstruct LLC. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+		<div class="copyright">&copy; Superstruct International, Inc. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
 
 	</div>
 
