@@ -1,0 +1,26 @@
+<section>
+  <header>
+    <h2>Get in touch</h2>
+  </header>
+  <div class="content">
+    <p><strong>Sound too good to be true?</strong> I'd be happy to learn more about what you're building and tell you more. Book a call, and maybe we can 4x your engineering output too.</p>
+    <ul class="actions">
+      <li><a href="https://harmonizely.com/david-guttman/superstruct-15" class="button primary large" id="schedule-call-2-button" target="_blank">Book a 15 minute Call with David</a></li>
+    </ul>
+
+    <p>
+      <iframe id="schedule-call-2" src="https://harmonizely.com/david-guttman/superstruct-15" style="width:100%; height:650px; display: none" frameborder="0" scrolling="yes"></iframe>
+
+      <script>
+        const btn2 = document.querySelector('#schedule-call-2-button')
+        const iframe2 = document.querySelector('#schedule-call-2')
+        btn2.addEventListener('click', function (evt) {
+          if (window.innerWidth < 925) return
+          evt.preventDefault()
+          btn2.style.display = 'none'
+          iframe2.style.display = 'block'
+        })
+      </script>
+  </div>
+
+</section>

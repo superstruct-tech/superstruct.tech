@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "serve public"
+    "start": "harp server public",
+    "build": "harp compile public dist"
   },
   "keywords": [],
   "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
   "license": "MIT",
   "devDependencies": {
+    "harp": "^0.32.0",
     "serve": "^11.0.1"
   }
 }
