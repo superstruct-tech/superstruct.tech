@@ -1,10 +1,11 @@
 include ./_mixins/section.jade
 include ./_mixins/book-call.jade
+include ./_mixins/email-capture.jade
 
 section.intro
   header
-    h1 Maximize Your Hires At Tech Events
-    h2 With A Done-For-You Recruiting Service
+    h1 Recruiting Best Practices Checklist 
+    h2 Maximize Hires When Sponsoring Tech Events
 
     ul.actions
       li
@@ -15,34 +16,29 @@ section.intro
     span.image.fill(data-position="center")
       img(src="images/meetup.jpg")
 
++section("Download Now")
+  +emailCapture('techEventRecruiting', '', 'Download Now')
+    p (Don't worry, we hate spam too. We'll never share your address with anyone.)
+
 +section("Not getting enough hires from your tech event sponsorships?")#first
   p Do you sponsor tech events in hopes of attracting dev talent? Are you not getting enough qualified applicants? Are you unsure what to do about it?
 
 +section("Imagine knowing exactly how to increase hires from your tech event sponsorships")
   p Imagine knowing that your tech sponsorship dollars were being spent usefully. Imagine getting twice as many applicants at your next event. Imagine knowing exactly what to do pre-, during-, and post-event. 
 
-+section("Our tech event done-for-you event recruiting service will get you more hires from tech events")
-  p The fee for our done-for-you event recruiting service is $2500, which is a fraction of what you’d pay a traditional recruiter. 
-  
-  h3 How it works: 
++section("Our tech event recruiting best practices checklist will show you exactly what to do to maximize your sponsorship dollars")
+  p Our 11-point checklist will show you exactly what to do to maximize your sponsorship investment and get more hires. It covers visual design, form design, call-to-action choices, tone, etc.  
 
-  p Once we chat to determine if there’s a good fit, here’s how it works: 
-
-  ol
-    li You pay
-    li We schedule the kickoff meeting
-    li We go over your company culture, key differentiators, compensation, positioning, who you're looking for, and who you're NOT looking for
-    li Superstruct builds your custom event-based recruiting funnel (event slide, positioning, talking points, lead collection page)
-    li We book a meeting for review and rehearsal to cover how the funnel should be used and how to pitch your company at events
-    li Sponsor events, collect leads, and hire engineers
-
-  +bookCall
++section("Download Now")
+  +emailCapture('techEventRecruiting', '', 'Download Now')
+    p (Don't worry, we hate spam too. We'll never share your address with anyone.)
 
 +section("What People Are Saying")
   blockquote
     “David’s help was a game changer for me. I spent months floundering to find a developer for my team. (I had, I realize now, a sub-par, ad-hoc hiring “strategy”.) But after I started working with David, I had hired a developer within the first week - and even better, I had a tested, reusable strategy for hiring quality engineers. Thanks, David!” 
     br
     — Nate Murray, Founder Newline.co
+
 
 +section("About Superstruct")
   p David started Superstruct to build a repeatable system for finding, recruiting, vetting, onboarding, and managing talented software engineers. This system integrates over 10 years of software engineering management experience with deep technical knowledge to help companies clear milestones faster, cheaper, and with less risk.
@@ -54,8 +50,7 @@ section.intro
   p David is a leader in the tech community and runs one of the largest JavaScript events in the country: js.la. This event draws world-famous speakers such as Ryan Dahl and Kyle Matthews and rising stars from the LA tech community, and regularly has standing-room only for its hundreds of attendees -- filling up large venues such as Google's main stage in Venice. Additionally, he runs the official Node.js Mentorship Team and the Los Angeles chapter of NodeSchool.
 
 +section("Stop Wasting Sponsorship Dollars")
-  p Stop wasting sponsorship dollars and get those hires you desperately need. #[a(href='/event-recruiting-checklist') Download our 11 point checklist] now and start getting applicants. 
+  p Stop wasting sponsorship dollars and get those hires you desperately need. Download our 11 point checklist now, and start getting applicants. 
 
-  +bookCall
-
-  p Not ready to chat? Download our #[a(href='/event-recruiting-checklist') tech event recruiting best practices checklist]. 
+  +emailCapture('techEventRecruiting', '', 'Download Now')
+    p (Don't worry, we hate spam too. We'll never share your address with anyone.)
