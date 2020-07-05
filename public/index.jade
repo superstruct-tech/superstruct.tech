@@ -1,4 +1,5 @@
 include ./_mixins/section.jade
+include ./_mixins/book-call.jade
 
 section.intro
   header
@@ -36,8 +37,7 @@ section.intro
     li We book a meeting for review and rehearsal to cover how the funnel should be used and how to pitch your company at events
     li Sponsor events, collect leads, and hire engineers
 
-  p [BOOK A 15-MINUTE CALL WITH DAVID]
-  p (Don’t worry, this isn’t a high pressure sales call. I just like to make sure we’re a good fit before working together.)
+  +bookCall
 
 +section("What People Are Saying")
   blockquote
@@ -58,8 +58,7 @@ section.intro
 +section("Stop Wasting Sponsorship Dollars")
   p Stop wasting sponsorship dollars and get those hires you desperately need. Download our 11 point checklist now and start getting applicants. 
 
-  p [BOOK A 15-MINUTE CALL WITH DAVID]
-  p (Don’t worry, this isn’t a high pressure sales call. I just like to make sure we’re a good fit before working together.)
+  +bookCall
 
   p Not ready to chat? Download our tech event recruiting best practices checklist here: 
 
