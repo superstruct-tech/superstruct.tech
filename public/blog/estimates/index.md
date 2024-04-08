@@ -1,5 +1,7 @@
 This is chapter 4 from [The Superstruct Manifesto: A Survival Guide for Founders Who Depend on Devs to Get Things Done](https://book.superstruct.tech).
 
+Update: I created <a href="https://upfollow.app" target="_blank">Upfollow</a> as a companion tool to this chapter. Easily get calendar reminders to check in with devs at the 50%, 75%,and 90% progress marks. Use these check-ins to prevent rabbit holes and get updated estimates.
+
 ---
 
 Software estimates are notoriously difficult. Devs hate giving them. They’re rarely correct. Many organizations abandon them entirely. Are they worth the trouble?
@@ -59,3 +61,5 @@ It’s crucial that your devs take responsibility for their estimates and that y
 ---
 
 Want more? Check out [The Superstruct Manifesto: A Survival Guide for Founders Who Depend on Devs to Get Things Done](https://book.superstruct.tech).
+
+Also check out <a href="https://upfollow.app" target="_blank">Upfollow</a> as a companion tool to this chapter. Easily get calendar reminders to check in with devs at the 50%, 75%,and 90% progress marks. Use these check-ins to prevent rabbit holes and get updated estimates.
