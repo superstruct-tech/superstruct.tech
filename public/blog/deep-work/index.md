@@ -2,7 +2,7 @@ Cal Newport is a smart guy. There's a reason why his book Deep Work is so popula
 
 It’s even worse than that. The size of those holes isn’t limited to the start and stop of each meeting. Depending on the placement of those meetings, those holes can extend well beyond the start and end times. 
 
-This is why I recommend that founders stop doing daily standups. What should they do instead? They should use async text chat like Slack or Teams. This approach has loads of advantages, but I’ve written about that elsewhere, and is not the focus of this article. 
+This is why I recommend that founders stop doing daily standups. What should they do instead? They should use async text chat like Slack or Teams. This approach has loads of advantages, but [I’ve written about that elsewhere](https://superstructmanifesto.com), and is not the focus of this article. 
 
 The focus of this article is to address the main objection I get from people about async standups.
 
