@@ -58,7 +58,81 @@
         </header>
         <div class="content">
           <%- yield %>
+          <div class="cta">
+            <h2>Looking for more?</h2>
+            <p>Enter your details to get the first chapter of The Superstruct Manifesto: A Survival Guide for Founders Who Depend on Devs to Get Things Done.</p>
+            
+            <div class="w-100 mw6" style="min-height: 500px">
+              <form id="download-form" class="flex flex-column">
+                <input type="text" name="name" placeholder="Your Name" class="w-100 mb3 input-reset pa3 f4 ba b--black-10" style="border-radius: 4px">
+                <input type="email" name="email" placeholder="Your Email" class="w-100 mb4 input-reset pa3 f4 ba b--black-10" style="border-radius: 4px">
+                <button type="submit" class="w-100 bg-black white ttu tracked f6 fw6 bn" style="border-radius: 4px; height: 48px">
+                  DOWNLOAD THE FIRST CHAPTER
+                </button>
+              </form>
+
+              <div id="loading-spinner" class="state dn" style="height: 200px">
+                <div class="spinner"></div>
+              </div>
+
+              <div id="success-message" class="state dn tc f4 i" style="height: 200px; padding-top: 84px">
+                Thanks! Your chapter is on the way.
+              </div>
+            </div>
+
+            <style>
+              .state {
+                opacity: 0;
+                transition: opacity 250ms ease-in-out;
+              }
+              .state.visible {
+                opacity: 1;
+              }
+              .spinner {
+                width: 32px;
+                height: 32px;
+                border: 3px solid rgba(0,0,0,0.1);
+                border-radius: 50%;
+                border-top-color: black;
+                animation: spin 1s linear infinite;
+                margin: 84px auto;
+              }
+              @keyframes spin {
+                to { transform: rotate(360deg); }
+              }
+            </style>
+
+            <script>
+              (function() {
+                const form = document.getElementById('download-form')
+                const spinner = document.getElementById('loading-spinner')
+                const success = document.getElementById('success-message')
+
+                if (!form || !spinner || !success) return
+
+                async function transition(hideElement, showElement) {
+                  hideElement.style.opacity = '0'
+                  await new Promise(resolve => setTimeout(resolve, 250))
+                  hideElement.style.display = 'none'
+                  showElement.style.display = 'block'
+                  await new Promise(resolve => setTimeout(resolve, 50))
+                  showElement.style.opacity = '1'
+                }
+
+                form.addEventListener('submit', async (e) => {
+                  e.preventDefault()
+                  await transition(form, spinner)
+                  
+                  // Simulate API call (replace with actual API call)
+                  await new Promise(resolve => setTimeout(resolve, 1500))
+                  
+                  await transition(spinner, success)
+                })
+              })()
+            </script>
+          </div>
         </div>
+        
       </section>
       <%- partial("../_partials/shared/footer") %>
     </div>
