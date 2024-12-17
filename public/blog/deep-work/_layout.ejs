@@ -60,7 +60,7 @@
           <%- yield %>
           <div class="cta">
             <h2>Looking for more?</h2>
-            <p>Enter your details to get the first chapter of The Superstruct Manifesto: A Survival Guide for Founders Who Depend on Devs to Get Things Done.</p>
+            <p>Enter your details to get the first chapter of <a href="//superstructmanifesto.com" target="_blank">The Superstruct Manifesto: A Survival Guide for Founders Who Depend on Devs to Get Things Done</a>.</p>
             
             <div class="w-100 mw6" style="min-height: 500px">
               <form id="download-form" class="flex flex-column">
@@ -76,7 +76,7 @@
               </div>
 
               <div id="success-message" class="state dn tc f4 i" style="height: 200px; padding-top: 84px">
-                Thanks! Your chapter is on the way.
+                Got it. Your chapter is on the way.
               </div>
             </div>
 
@@ -121,10 +121,27 @@
 
                 form.addEventListener('submit', async (e) => {
                   e.preventDefault()
+                  const formData = new FormData(form)
+                  
                   await transition(form, spinner)
                   
-                  // Simulate API call (replace with actual API call)
-                  await new Promise(resolve => setTimeout(resolve, 1500))
+                  try {
+                    const response = await fetch('https://lists.superstruct.tech/api/contacts', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json'
+                      },
+                      body: JSON.stringify({
+                        email: formData.get('email'),
+                        firstName: formData.get('name'),
+                        listId: '447403'
+                      })
+                    })
+                    
+                    if (!response.ok) throw new Error('Network response was not ok')
+                  } catch (error) {
+                    console.error('Error:', error)
+                  }
                   
                   await transition(spinner, success)
                 })

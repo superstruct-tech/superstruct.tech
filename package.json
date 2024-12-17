@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "harp server public",
+    "start": "harp server public -p 3000",
     "build": "harp compile public dist"
   },
   "keywords": [],
