@@ -27,7 +27,7 @@ p {
 }
 
 /* Form Elements */
-.formkit-input {
+.input {
   font-family: inherit;
   width: 100%;
   background: #ffffff;
@@ -44,20 +44,20 @@ p {
   border-width: 1px;
 }
 
-.formkit-input:focus {
+.input:focus {
   outline: none;
   border-color: #1677be;
   -webkit-transition: border-color ease 300ms;
   transition: border-color ease 300ms;
 }
 
-.formkit-input::placeholder {
+.input::placeholder {
   color: inherit;
   opacity: 0.8;
 }
 
 /* Submit Button */
-.formkit-submit {
+.submit-btn {
   border: 0;
   border-radius: 5px;
   color: #ffffff;
@@ -78,12 +78,12 @@ p {
   width: 100%;
 }
 
-.formkit-submit:hover > span,
-.formkit-submit:focus > span {
+.submit-btn:hover > span,
+.submit-btn:focus > span {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.formkit-submit > span {
+.submit-btn > span {
   display: block;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
@@ -91,16 +91,16 @@ p {
 }
 
 /* Form Layout */
-.formkit-form {
+.form {
   /* Inherits from parent styles */
 }
 
-.formkit-fields,
-.formkit-field {
+.form-fields,
+.form-field {
   margin-bottom: 15px;
 }
 
-.formkit-alert {
+.alert {
   background: #f9fafb;
   border: 1px solid #e3e3e3;
   border-radius: 5px;
@@ -113,23 +113,23 @@ p {
   width: 100%;
 }
 
-.formkit-alert:empty {
+.alert:empty {
   display: none;
 }
 
-.formkit-alert-error {
+.alert-error {
   background: #fde8e2;
   border-color: #f2643b;
   color: #ea4110;
 }
 
-.formkit-disclaimer {
+.disclaimer {
   margin: 5px auto 0;
   text-align: center;
 }
 
 /* Spinner */
-.formkit-spinner {
+.spinner {
   display: -webkit-box;
   display: flex;
   height: 0px;
@@ -146,7 +146,7 @@ p {
   transition: all 300ms ease-in-out;
 }
 
-.formkit-spinner > div {
+.spinner > div {
   margin: auto;
   width: 12px;
   height: 12px;
@@ -154,31 +154,31 @@ p {
   opacity: 0.3;
   border-radius: 100%;
   display: inline-block;
-  -webkit-animation: formkit-bouncedelay 1.4s infinite ease-in-out both;
-          animation: formkit-bouncedelay 1.4s infinite ease-in-out both;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out both;
+          animation: bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.formkit-spinner > div:nth-child(1) {
+.spinner > div:nth-child(1) {
   -webkit-animation-delay: -0.32s;
           animation-delay: -0.32s;
 }
 
-.formkit-spinner > div:nth-child(2) {
+.spinner > div:nth-child(2) {
   -webkit-animation-delay: -0.16s;
           animation-delay: -0.16s;
 }
 
-.formkit-submit[data-active] .formkit-spinner {
+.submit-btn[data-active] .spinner {
   opacity: 1;
   height: 100%;
   width: 50px;
 }
 
-.formkit-submit[data-active] .formkit-spinner span {
+.submit-btn[data-active] .spinner span {
   opacity: 0;
 }
 
-@-webkit-keyframes formkit-bouncedelay {
+@-webkit-keyframes bouncedelay {
   0%,
   80%,
   100% {
@@ -191,7 +191,7 @@ p {
   }
 }
 
-@keyframes formkit-bouncedelay {
+@keyframes bouncedelay {
   0%,
   80%,
   100% {
@@ -205,7 +205,7 @@ p {
 }
 
 /* Page Layout */
-.formkit-page {
+.page {
   line-height: 1.5;
   display: -webkit-box;
   display: flex;
@@ -217,30 +217,30 @@ p {
   position: relative;
 }
 
-.formkit-font-serif {
+.serif-font {
   font-family: var(--headings-font-family);
 }
 
-.formkit-heading-primary {
+.primary-heading {
   font-size: calc(32px + (40 - 32) * ((100vw - 400px) / (1000 - 400)));
   line-height: 1.25;
   margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1200px) {
-  .formkit-heading-primary {
+  .primary-heading {
     font-size: 40px;
   }
 }
 
-.formkit-heading-card {
+.card-heading {
   font-size: calc(24px + (33 - 24) * ((100vw - 400px) / (1000 - 400)));
   line-height: 1.25;
   margin-bottom: 0.5em;
 }
 
 @media screen and (min-width: 1200px) {
-  .formkit-heading-card {
+  .card-heading {
     font-size: 33px;
   }
 }
@@ -260,7 +260,7 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .formkit-container {
+  .container {
     display: -webkit-box;
     display: flex;
     margin: 120px auto 145px;
@@ -271,7 +271,7 @@ p {
   }
 }
 
-.formkit-background-image {
+.background-image {
   background-position: center center;
   background-size: cover;
   padding-bottom: 50%;
@@ -279,19 +279,19 @@ p {
 }
 
 @media screen and (min-width: 800px) {
-  .formkit-background-image {
+  .background-image {
     height: 100%;
     padding-bottom: 0;
     position: absolute;
   }
 }
 
-.formkit-main {
+.main-content {
   padding: 24px 38px 48px 24px;
 }
 
 @media screen and (min-width: 800px) {
-  .formkit-main {
+  .main-content {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -306,43 +306,43 @@ p {
 }
 
 @media screen and (min-width: 940px) {
-  .formkit-main {
+  .main-content {
     padding-right: 120px;
     width: 63.3333%;
   }
 }
 
-.formkit-name {
+.brand-name {
   font-size: 14px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 800px) {
-  .formkit-name {
+  .brand-name {
     font-size: 16px;
     margin-bottom: 80px;
   }
 }
 
-.formkit-content {
+.content {
   font-size: 18px;
 }
 
-.formkit-content p {
+.content p {
   margin-bottom: 15px;
 }
 
-.formkit-text {
+.text {
   font-size: inherit;
 }
 
-.formkit-card {
+.card {
   padding: 48px 24px 70px;
 }
 
 @media screen and (min-width: 800px) {
-  .formkit-card {
+  .card {
     box-shadow: 0 24px 120px rgba(0, 0, 0, 0.2);
     margin-right: 3.3333%;
     min-height: calc(100% + 80px);
@@ -355,18 +355,18 @@ p {
 }
 
 @media screen and (min-width: 940px) {
-  .formkit-card {
+  .card {
     width: 33.3333%;
   }
 }
 
-.formkit-card-content {
+.card-content {
   font-size: 16px;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 800px) {
-  .formkit-card-content {
+  .card-content {
     font-size: 18px;
   }
 }
