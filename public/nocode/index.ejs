@@ -1,6 +1,12 @@
 <html lang="en">
 
 <head>
+  <script>
+    // if url path doesn't end in / redirect to /nocode/
+    if (window.location.pathname !== '/nocode/') {
+      window.location.href = '/nocode/';
+    }
+  </script>
   <title>Outgrowing No-Code?</title>
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <meta name="description"
