@@ -1,1 +1,203 @@
-<%- yield %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% if (typeof pageTitle === 'undefined') { %>
+    <title>No-Code Transition Roadmap</title>
+  <% } else { %>
+    <title><%= pageTitle %></title>
+  <% } %>
+  
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <% if (typeof pageDescription === 'undefined') { %>
+    <meta name="description" content="Transition from no-code tools to custom development solutions.">
+  <% } else { %>
+    <meta name="description" content="<%= pageDescription %>">
+  <% } %>
+  
+  <% if (typeof ogTitle === 'undefined') { %>
+    <meta property="og:title" content="No-Code Transition Roadmap">
+  <% } else { %>
+    <meta property="og:title" content="<%= ogTitle %>">
+  <% } %>
+  
+  <% if (typeof ogDescription === 'undefined') { %>
+    <meta property="og:description" content="Transition from no-code tools to custom development solutions.">
+  <% } else { %>
+    <meta property="og:description" content="<%= ogDescription %>">
+  <% } %>
+  
+  <meta property="og:type" content="website">
+  
+  <% if (typeof twitterTitle === 'undefined') { %>
+    <meta name="twitter:title" content="No-Code Transition Roadmap">
+  <% } else { %>
+    <meta name="twitter:title" content="<%= twitterTitle %>">
+  <% } %>
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Lato:400,700&amp;display=swap">
+  
+  <style>
+    :root {
+      --headings-font-family: Playfair Display, serif;
+      --body-font-family: Lato, sans-serif;
+      --background-background-image: url('terrain.svg');
+      --background-opacity: 0.23;
+      --background-background-color: #000000;
+      --card-background-color: #ffffff;
+      --bg_top-background-color: #ffffff;
+      --page-background-color: #1d1d1d;
+      --name-color: #ffffff;
+      --name-font-weight: 700;
+      --name-letter-spacing: 1px;
+      --header-color: #ffffff;
+      --header-font-weight: 700;
+      --content_text-color: #bfbfbf;
+      --form_header-color: #281841;
+      --form_header-font-weight: 700;
+      --form_content_text-color: #281841;
+      --field-font-size: 18px;
+      --field-color: #808080;
+      --field-background-color: #ffffff;
+      --field-border-radius: 0px;
+      --field-font-weight: 400;
+      --field-border-color: #dddddd;
+      --button-color: #ffffff;
+      --button-background-color: #E35200;
+      --button-border-radius: 0px;
+      --button-font-size: 14px;
+      --button-font-weight: 700;
+      --button-letter-spacing: 2px;
+      --disclaimer-color: #666666;
+      --disclaimer-font-size: 14px;
+    }
+  </style>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body>.form {
+      margin: 80px auto;
+    }
+
+    .success-btn {
+      border: 0;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: #E35200;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 500;
+      margin: 20px 0;
+      overflow: hidden;
+      padding: 17px 24px;
+      position: relative;
+      vertical-align: middle;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      text-transform: uppercase;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    .success-btn:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  
+  <% if (typeof includeFormJs !== 'undefined' && includeFormJs) { %>
+    <script src="form.js"></script>
+  <% } %>
+  
+  <% if (typeof indexRedirect !== 'undefined' && indexRedirect) { %>
+    <script>
+      // if url path doesn't end in / redirect to /nocode/
+      if (window.location.pathname !== '/nocode/') {
+        window.location.href = '/nocode/';
+      }
+    </script>
+  <% } %>
+</head>
+
+<body data-template="Franklin">
+  <div id="container">
+    <div class="page" style="background-color:#1d1d1d">
+      <div style="background-color:#ffffff" class="bg-top"></div>
+      <div class="container" style="background-color:#000000">
+        <div class="background-image"
+          style="background-image:url('terrain.svg');opacity:0.23;background-color:#000000;background-size:auto auto;background-repeat:repeat">
+        </div>
+        <div class="main-content">
+          <div class="serif-font brand-name" style="color:#ffffff;font-weight:700;letter-spacing:1px">
+            <p>no-code Transition Roadmap</p>
+          </div>
+          <div>
+            <div class="serif-font primary-heading" style="color:#ffffff;font-weight:700">
+              <% if (typeof primaryHeading === 'undefined') { %>
+                <h1>No-Code Transition</h1>
+              <% } else { %>
+                <h1><%= primaryHeading %></h1>
+              <% } %>
+            </div>
+            <div class="content">
+              <div class="text" style="color:#bfbfbf">
+                <% if (typeof mainContent === 'undefined') { %>
+                  <p>Your transition guide content goes here.</p>
+                <% } else { %>
+                  <%- mainContent %>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" style="background-color:#ffffff">
+          <div class="serif-font card-heading" style="color:#281841;font-weight:700">
+            <% if (typeof cardHeading === 'undefined') { %>
+              <h1>Get Started</h1>
+            <% } else { %>
+              <h1><%= cardHeading %></h1>
+            <% } %>
+          </div>
+          <div class="card-content">
+            <% if (typeof cardContent === 'undefined') { %>
+              <div class="text" style="color:#281841">
+                <p>Card content goes here.</p>
+              </div>
+            <% } else { %>
+              <%- cardContent %>
+            <% } %>
+          </div>
+          <% if (typeof cardActions === 'undefined') { %>
+            <!-- No actions defined -->
+          <% } else { %>
+            <%- cardActions %>
+          <% } %>
+          <% if (typeof disclaimerText === 'undefined') { %>
+            <div class="disclaimer" style="color:#666666;font-size:14px">
+              Questions? Contact us for support.
+            </div>
+          <% } else { %>
+            <div class="disclaimer" style="color:#666666;font-size:14px">
+              <%= disclaimerText %>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
