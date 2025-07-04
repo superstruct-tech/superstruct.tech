@@ -1,0 +1,37 @@
+<div id="container">
+  <div class="formkit-page" style="background-color:#1d1d1d">
+    <div style="background-color:#ffffff" class="bg-top"></div>
+    <div class="formkit-container" style="background-color:#000000">
+      <div class="formkit-background-image"
+        style="background-image:url('terrain.svg');opacity:0.23;background-color:#000000;background-size:auto auto;background-repeat:repeat">
+      </div>
+      <div class="formkit-main">
+        <div class="formkit-font-serif formkit-name" style="color:#ffffff;font-weight:700;letter-spacing:1px">
+          <p>no-code Transition Roadmap</p>
+        </div>
+        <div>
+          <div class="formkit-font-serif formkit-header" style="color:#ffffff;font-weight:700">
+            <h1><%= primaryHeading %></h1>
+          </div>
+          <div class="formkit-content">
+            <div class="formkit-text" style="color:#bfbfbf">
+              <%- mainContent %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formkit-card" style="background-color:#ffffff">
+        <div class="formkit-font-serif formkit-form-header" style="color:#281841;font-weight:700">
+          <h1><%= cardHeading %></h1>
+        </div>
+        <div class="formkit-form-content">
+          <div class="formkit-text" style="color:#281841">
+            <%- cardContent %>
+          </div>
+        </div>
+        <%- cardActions %>
+        <div class="formkit-disclaimer" style="color:#666666;font-size:14px"><%= disclaimerText %></div>
+      </div>
+    </div>
+  </div>
+</div>

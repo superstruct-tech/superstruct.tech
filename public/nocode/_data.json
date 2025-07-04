@@ -1,0 +1,23 @@
+{
+  "index": {
+    "title": "Outgrowing No-Code?",
+    "description": "Bubble, Airtable, and Zapier are great… until they aren't. When your tools start slowing you down, it's time to evolve.",
+    "primaryHeading": "Outgrowing No-Code?",
+    "cardHeading": "Transition Without a Painful Rebuild",
+    "disclaimerText": "We respect your privacy. Unsubscribe at any time."
+  },
+  "thanks": {
+    "title": "Thank You - No-Code Transition Roadmap",
+    "description": "Thank you for downloading the No-Code Transition Roadmap. Check your email for your free guide.",
+    "primaryHeading": "You're All Set!",
+    "cardHeading": "What's Next?",
+    "disclaimerText": "Questions? Reply to the email we just sent you."
+  },
+  "thanks-call": {
+    "title": "Call Booked - Let's Map Your Path Forward",
+    "description": "Your call is confirmed. We'll discuss how to apply no-code transition principles to your specific business needs.",
+    "primaryHeading": "You're All Set!",
+    "cardHeading": "What to Expect on Our Call",
+    "disclaimerText": "Questions before our call? Reply to the confirmation email."
+  }
+}

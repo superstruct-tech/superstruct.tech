@@ -1,23 +1,13 @@
 <%
-  pageTitle = "Thank You - No-Code Transition Roadmap";
-  pageDescription = "Thank you for downloading the No-Code Transition Roadmap. Check your email for your free guide.";
-  ogTitle = "Thank You - No-Code Transition Roadmap";
-  ogDescription = "Thank you for downloading the No-Code Transition Roadmap. Check your email for your free guide.";
-  twitterTitle = "Thank You - No-Code Transition Roadmap";
-  
-  primaryHeading = "You're All Set!";
   mainContent = `
     <p>Your No-Code Transition Roadmap is on its way to your inbox.</p>
     <p>Check your email in the next few minutes for your free guide OR click the download button if you have time to read it now.</p>
   `;
   
-  cardHeading = "What's Next?";
   cardContent = `
-    <div class="text" style="color:#281841">
-      <p>» <strong>Download your roadmap</strong> using the button below or check your email for the PDF.</p>
-      <p>» <strong>Review the step-by-step guide</strong> to understand your options.</p>
-      <p>» <strong>Need help implementing?</strong> We're here to guide you through the transition.</p>
-    </div>
+    <p>» <strong>Download your roadmap</strong> using the button below or check your email for the PDF.</p>
+    <p>» <strong>Review the step-by-step guide</strong> to understand your options.</p>
+    <p>» <strong>Need help implementing?</strong> We're here to guide you through the transition.</p>
   `;
   
   cardActions = `
@@ -28,16 +18,13 @@
       Back to Superstruct
     </a>
   `;
-  
-  disclaimerText = "Questions? Reply to the email we just sent you.";
-  
-  includeFormJs = false;
-  indexRedirect = false;
 %>
+
+<%- include('_page-content') %>
 
 <!-- Google tag (gtag.js) event -->
 <script>
-  gtag('event', 'conversion_event_submit_lead_form', {
+  gtag('event', 'manual_event_SUBMIT_LEAD_FORM', {
     // <event_parameters>
   });
 </script>
